@@ -48,13 +48,9 @@
 public class RemoveDuplicatesII {
     public static void main(String[] args) {
         int[] nums = {1, 1, 1, 2, 2, 3};
-        Solution solution = new Solution();
-        int k = solution.removeDuplicates(nums);
+        int k = removeDuplicates(nums);
     }
-}
-
-class Solution {
-    public int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
         if (nums.length <= 2) {
             return nums.length;
         }
